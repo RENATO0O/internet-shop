@@ -58,3 +58,15 @@ a{
     flex-direction: column;
     align-items: center;
 }
+
+button{
+    height: 65px;
+    width: 130px;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.price{
+    margin-left: auto;
+    text-align: center;
+}
