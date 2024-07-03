@@ -1,24 +1,28 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
 
+<div class="navigation">
 <h1>Мемозин</h1>
-    <a href='/'>Главная</a>
-    <a href='/products'>Товары</a>
-    <a href='/aboutas'>О нас</a>
+<a href='/'>Главная</a>
+<a href='/products'>Товары</a>
+<a href='/aboutas'>О нас</a>
+</div>
 
-    <div class="product">
-        <img src='https://public-files.gumroad.com/lo3ixj1w2oosw7p090hkm9cab18a'>
-        <div>
-            <h2>Мьюинг</h2>
-            <p>Бай-Бай</p>
-        </div>
-        <button>Купить</button>
+<div class="productList">
+<div class="product">
+    <img src='https://public-files.gumroad.com/lo3ixj1w2oosw7p090hkm9cab18a'>
+    <div>
+        <h2>Мьюинг</h2>
+        <p>Бай-Бай</p>
     </div>
-    <div class="product">
-        <img src='https://avatars.yandex.net/get-music-content/8123381/4fa1a2b7.a.24998666-1/m1000x1000?webp=false'>
-        <div>
-            <h2>Сигма</h2>
-            <p>Сигма-крипер вместе с сигма-свинкой шли по полю... </p>
-        </div>
-        <button>Купить</button>
+    <button>Купить</button>
+</div>
+<div class="product">
+    <img src='https://avatars.yandex.net/get-music-content/8123381/4fa1a2b7.a.24998666-1/m1000x1000?webp=false'>
+    <div>
+        <h2>Сигма</h2>
+        <p>Сигма-крипер вместе с сигма-свинкой шли по полю... </p>
     </div>
+    <button>Купить</button>
+</div>
+</div>
