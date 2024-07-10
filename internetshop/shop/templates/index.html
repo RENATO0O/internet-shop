@@ -9,26 +9,19 @@
 </div>
 
 <div class="productList">
+
+{% for product in products %}
 <div class="product">
-    <img src='https://public-files.gumroad.com/lo3ixj1w2oosw7p090hkm9cab18a'>
+    <img src="{{ product.image_url }}"/>
     <div>
-        <h2>Мьюинг</h2>
-        <p>Бай-Бай</p>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
     </div>
+
     <div class="price">
-    <h3> 999 руб. </h3>
-    <button>Купить</button>
+        <h3>{{ product.price }} ₽</h3>
+        <button>Купить</button>
     </div>
 </div>
-<div class="product">
-    <img src='https://avatars.yandex.net/get-music-content/8123381/4fa1a2b7.a.24998666-1/m1000x1000?webp=false'>
-    <div>
-        <h2>Сигма</h2>
-        <p>Сигма-крипер вместе с сигма-свинкой шли по полю... </p>
-    </div>
-    <div class="price">
-    <h3> 999 руб. </h3>
-    <button>Купить</button>
-    </div>
-</div>
+{% endfor %}
 </div>

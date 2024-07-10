@@ -5,8 +5,8 @@ from .models import Product
 
 # Create your views here.
 def home(request):
-    products = Product.object.all()
+    products = Product.objects.all()
 
-    return render(request, 'index.html', {
+    return render(request, "index.html", {
         'products': products
     })
