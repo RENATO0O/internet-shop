@@ -1,1 +1,20 @@
-Product
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<div class="navigation">
+<h1>Мемозин</h1>
+<a href='/'>Главная</a>
+<a href='/products'>Товары</a>
+<a href='/aboutas'>О нас</a>
+</div>
+
+<div class="productDetails">
+    <img src="https://nztcdn.com/files/80c03933-3891-48b6-b668-5040351ea967.webp">
+    <div>
+        <h1>Продукт</h1>
+        <div class="productPrice">
+            <p>999 рублей</p>
+            <button>Купить</button>
+        </div>
+    </div>
+</div>
