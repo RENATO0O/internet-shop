@@ -12,14 +12,19 @@ h1{
    margin: 0;
 }
 
-img{
+.productPreview{
     width: 300px
+}
+
+.productImage{
+    max-width: 60%;
+    max-height: 100%;
 }
 
 .product{
     border: 1px black solid;
     display: flex;
-    height: 250px;
+    min-height: 250px;
     margin-top: 10px;
     border-radius: 20px;
     padding: 10;
@@ -27,13 +32,7 @@ img{
     width: 75%;
 }
 
-h2{
-   width: 150px
-}
 
-p{
-  width: 500px
-}
 
 button{
        margin-left: auto;
@@ -74,7 +73,7 @@ button{
 .productDetails{
     display: flex;
     flex-direction: row;
-    width: 75%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     border: 1px black solid;
