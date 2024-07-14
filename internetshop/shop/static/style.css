@@ -85,3 +85,14 @@ button{
     display: flex;
     flex-direction: row;
 }
+
+.productTitle{
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.productTitle * {
+    font-style: normal;
+    color: black;
+    margin-bottom: 20px
+}
