@@ -7,5 +7,7 @@ class Product(models.Model):
     price = models.IntegerField()
     image_url = models.CharField(max_length=1024)
 
+    year = models.IntegerField(null=True, blank=True)
+
     def __str__(self):
         return self.name
