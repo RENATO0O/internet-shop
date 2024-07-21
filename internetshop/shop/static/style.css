@@ -6,7 +6,7 @@
 
 h1{
    font-size: 50px;
-   color: f80;
+   color: #f80;
    font-family: "Cuprum";
    font-style: italic;
    margin: 0;
@@ -23,7 +23,7 @@ h1{
 }
 
 .product{
-    border: 1px black solid;
+    border: 7px #f80 solid;
     display: flex;
     min-height: 250px;
     margin-top: 10px;
@@ -83,7 +83,7 @@ button{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px black solid;
+    border: 7px #f80 solid;
     border-radius: 20px;
     padding: 10;
 }
@@ -110,11 +110,33 @@ button{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px black solid;
+    border: 7px #f80 solid;
     border-radius: 20px;
     padding: 10;
 }
 
 .productDescription * {
     margin: 20px;
+}
+
+.filter{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 4px #f80 solid;
+    border-radius: 20px;
+    padding: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput{
+    font-size: 20px;
+    border: none;
+    background-color: #efefed;
+    padding: 18px;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 10px;
 }
