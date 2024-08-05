@@ -164,6 +164,7 @@ button{
 
 .createReview input {
     background-color: #e0e0e0;
+    padding: 5px !important;
 }
 
 .createReview textarea {
@@ -175,4 +176,9 @@ button{
     margin-top: 10px !important;
     margin-left: auto !important;
     padding: 10px !important;
+}
+
+.createReview select {
+    background-color: #e0e0e0;
+    padding: 5px !important;
 }

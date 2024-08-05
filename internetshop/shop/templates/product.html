@@ -47,12 +47,16 @@
     </div>
     {% endfor %}
 
-    <form class="createReview" methot="post">
+    <form class="createReview" method="post">
         {% csrf_token %}
         <label for="author">Автор:</label>
         <input name="author">
         <label for="rating">Оценка:</label>
-        <input name="rating">
+        <select name="rating">
+            <option value="1">Топ</option>
+            <option value="0">Дно</option>
+        </select>
+
         <label for="duration">Срок использования(в месяцах):</label>
         <input name="duration">
         <label for="review">Отзыв:</label>
