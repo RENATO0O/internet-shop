@@ -15,7 +15,15 @@
     <h2>+78005553535 <button onclick="copyPhone()">Скопировать</button></h2>
     <h2>Иванов И. И.</h2>
     <div class="vspace"></div>
-    <button class="paymentButton">Оплатил</button>
+    <form class="paymentForm" method="post">
+        <label>Адрес доставки:</label>
+        <input name="address" required>
+        <label>Ваше ФИО:</label>
+        <input name="name" required>
+        <div class="vspace"></div>
+        <div class="vspace"></div>
+        <button class="paymentButton">Оплатил</button>
+    </form>
 </div>
 
 <script>
