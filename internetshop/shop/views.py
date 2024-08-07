@@ -3,6 +3,11 @@ from django.shortcuts import render
 
 from .models import Product, Review
 
+import telebot
+
+from .config import BOT_TOKEN, CHAT_ID
+
+bot = telebot.TeleBot(BOT_TOKEN)
 
 # Create your views here.
 def home(request):
@@ -45,4 +50,14 @@ def view_product(request, id):
     })
 
 def payment(request):
+    if request.method == "POST":
+        name = request.POST.get('name')
+        address = request.POST.get('address')
+        # Send message to Telegram
+        bot.send_message(CHAT_ID, f'''📦 Новый заказ: Тест
+        
+ФИО покупателя: {name}
+Адрес доставки: {address}
+''')
+
     return render(request, "payment.html")

@@ -16,6 +16,7 @@
     <h2>Иванов И. И.</h2>
     <div class="vspace"></div>
     <form class="paymentForm" method="post">
+        {% csrf_token %}
         <label>Адрес доставки:</label>
         <input name="address" required>
         <label>Ваше ФИО:</label>
