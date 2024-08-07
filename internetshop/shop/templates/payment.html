@@ -7,9 +7,9 @@
 </div>
 
 <div class="paymentCard">
-    <h2>Товар: Мьюинг</h2>
-    <img class="productImage" src="https://nztcdn.com/files/80c03933-3891-48b6-b668-5040351ea967.webp">
-    <h2>К оплате: 999 рублей</h2>
+    <h2>Товар: {{ product.name }}</h2>
+    <img class="productImage" src="{{ product.image_url }}">
+    <h2>К оплате: {{ product.price }} рублей</h2>
     <div class="vspace"></div>
     <h3>Реквезиты для перевода:</h3>
     <h2>+78005553535 <button onclick="copyPhone()">Скопировать</button></h2>
