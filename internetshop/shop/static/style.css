@@ -193,3 +193,11 @@ button{
     border-radius: 20px;
     padding: 10;
 }
+
+.vspace {
+    height: 10px;
+}
+
+.paymentButton {
+    width: 100%;
+}
