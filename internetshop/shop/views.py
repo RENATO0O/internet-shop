@@ -5,7 +5,11 @@ from .models import Product, Review
 
 import telebot
 
-from .config import BOT_TOKEN, CHAT_ID
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
+
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
